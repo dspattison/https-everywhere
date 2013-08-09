@@ -13,8 +13,10 @@
   <target host="api.recaptcha.net" />
   <target host="gdata.youtube.com" />
 
+  <rule from="^http://www\.google-analytics\.com/ga.js"
+          to="https://ssl.google-analytics.com/ga.js"/>
   <rule from="^http://www\.google-analytics\.com/"
-          to="https://ssl.google-analytics.com/"/>
+          to="https://www.google-analytics.com/"/>
   <rule from="^http://(ajax|chart|fonts|translate|www)\.googleapis\.com/"
           to="https://$1.googleapis.com/"/>
   <rule from="^http://commondatastorage\.googleapis\.com/"
